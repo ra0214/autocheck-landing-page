@@ -1,5 +1,5 @@
 const observerOptions = {
-    threshold: 0.1
+    threshold: 0.05
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -11,12 +11,11 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.card, .feature-item').forEach(el => {
+document.querySelectorAll('.card, .feature-item, .stack-box').forEach(el => {
     el.style.opacity = "0";
-    el.style.transform = "translateY(30px)";
-    el.style.transition = "all 0.6s ease-out";
+    el.style.transform = "translateY(25px)";
+    el.style.transition = "all 0.5s ease-out";
     observer.observe(el);
 });
 
-console.log("AutoCheck OCR: Sistema de Auditoría Activo.");
-console.log("Algoritmo ISO 3779 cargado localmente...");
+console.log("AutoCheck OCR: Sistema de Auditoría Avanzado Inicializado.");

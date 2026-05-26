@@ -14,7 +14,9 @@
             <ul>
                 <li><a href="#problema">Problema</a></li>
                 <li><a href="#solucion">Solución</a></li>
-                <li><a href="#tecnologia">Tecnología</a></li>
+                <li><a href="#alcances">Alcances</a></li>
+                <li><a href="#usuarios">Usuarios</a></li>
+                <li><a href="#monetizacion">Monetización</a></li>
                 <li><a href="#arquitectura">Arquitectura</a></li>
             </ul>
         </nav>
@@ -23,7 +25,7 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Auditoría de legalidad vehicular mediante OCR y Machine Learning local</h1>
-            <p>Prevención de fraudes en la documentación automotriz.</p>
+            <p>Prevención de fraudes en la documentación automotriz sin dependencias externas.</p>
             <div class="badges">
                 <span class="badge">9no Cuatrimestre</span>
                 <span class="badge">Proyecto Integrador</span>
@@ -36,18 +38,18 @@
         <div class="content-grid">
             <div class="card">
                 <h3>Fraude Documental</h3>
-                <p>Proliferación de facturas apócrifas y alteración de Números de Identificación Vehicular (VIN) en transacciones entre particulares.</p>
+                <p>Proliferación de facturas apócrifas y alteración de Números de Identificación Vehicular (VIN) en transacciones de autos usados.</p>
             </div>
             <div class="card">
                 <h3>Vulnerabilidad Social</h3>
-                <p>Pérdidas económicas significativas y problemas legales para compradores de buena fe.</p>
+                <p>Pérdidas económicas significativas y severos problemas legales para compradores de buena fe.</p>
             </div>
         </div>
     </section>
 
     <section id="solucion" class="section dark">
         <h2>Nuestra Solución</h2>
-        <p class="subtitle">Ecosistema autónomo de auditoría técnica sin dependencia de APIs externas.</p>
+        <p class="subtitle">Ecosistema autónomo de auditoría técnica basado en microservicios.</p>
         <div class="features">
             <div class="feature-item">
                 <h4>OCR Local</h4>
@@ -55,7 +57,7 @@
             </div>
             <div class="feature-item">
                 <h4>Validación ISO 3779</h4>
-                <p>Algoritmo matemático propio para verificar la integridad del dígito verificador del VIN.</p>
+                <p>Algoritmo matemático automatizado en Go para verificar el dígito verificador del VIN.</p>
             </div>
             <div class="feature-item">
                 <h4>Seguridad Forense</h4>
@@ -64,10 +66,56 @@
         </div>
     </section>
 
-    <section id="arquitectura" class="section">
+    <section id="alcances" class="section">
+        <h2>Alcances del Proyecto</h2>
+        <div class="content-grid">
+            <div class="card">
+                <h3>Fase 1: MVP Core</h3>
+                <p>Procesamiento analítico de facturas de origen, cálculo matemático del algoritmo de validación del VIN y emisión de reportes técnicos con firmas hash SHA-256 no repudiables.</p>
+            </div>
+            <div class="card">
+                <h3>Fase 2: Escalabilidad</h3>
+                <p>Arquitectura SOA desacoplada y lista para migrar a servicios en la nube (AWS), permitiendo la integración futura con bases de datos públicas de reportes de robo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="usuarios" class="section dark">
+        <h2>Usuarios Clave</h2>
+        <div class="features">
+            <div class="feature-item">
+                <h4>Peritos y Auditores</h4>
+                <p>Especialistas técnicos que requieren optimizar y validar la autenticidad de la documentación en minutos.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Compradores Particulares</h4>
+                <p>Usuarios finales que buscan certeza jurídica inmediata antes de realizar una transacción monetaria.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Lotes de Autos Usados</h4>
+                <p>Comercios medianos que necesitan blindar su inventario contra vehículos de procedencia ilícita.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="monetizacion" class="section">
+        <h2>Modelo de Monetización</h2>
+        <div class="content-grid">
+            <div class="card">
+                <h3>Pago por Consulta (B2C)</h3>
+                <p>Microtransacciones accesibles para usuarios particulares que requieren una auditoría exprés en un momento específico.</p>
+            </div>
+            <div class="card">
+                <h3>Suscripción Mensual (B2B)</h3>
+                <p>Planes SaaS corporativos dirigidos a lotes de autos y agencias con consultas ilimitadas y reportes personalizados.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="arquitectura" class="section dark">
         <h2>Arquitectura & Stack</h2>
         <div class="stack-grid">
-            <div class="stack-box"><strong>Frontend:</strong> Flutter </div>
+            <div class="stack-box"><strong>Frontend:</strong> Flutter</div>
             <div class="stack-box"><strong>Backend:</strong> Go (SOA Microservices)</div>
             <div class="stack-box"><strong>Base de Datos:</strong> PostgreSQL (SQL)</div>
             <div class="stack-box"><strong>IA:</strong> ML Local (Sin APIs Externas)</div>
